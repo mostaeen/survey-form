@@ -1,0 +1,31 @@
+.outer>.inner-1,
+.outer>.inner-2 {
+    display: inline;
+    border: 1px solid #F0EFE9;
+    position: relative;
+    /* padding-right: 10px;
+    padding-left: 5px;
+    margin-left: -4px;
+    border-left: none;
+    border-right: none; */
+}
+
+.outer>.inner-1::after {
+    content: " ";
+    border-right: 1px solid #F0EFE9;
+    border-top: 1px solid #F0EFE9;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    /* top: 3px; */
+    height: 26px;
+    width: 26px;
+}
+
+.outer>.inner-1:first-child {
+    border-left: 1px solid #F0EFE9;
+}
+
+.outer>.inner-2 {
+    border-right: 1px solid #F0EFE9;
+}
